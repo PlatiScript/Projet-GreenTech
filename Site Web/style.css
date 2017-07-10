@@ -1,0 +1,481 @@
+/* Bleu : #1E2D40
+   Jaune : #F2C063
+   Orange : #D9644A
+   Red : #A63F3F
+   vert : #71df7e;
+*/
+@font-face{
+	font-family: Open sans;
+	src : url("font/OpenSans-Light.ttf");
+}
+body {
+	margin:0;
+	padding:0;
+	background-color:#1E2D40;
+	font-family: Open sans;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.container{
+	width:900px;
+	margin:0 auto;
+}
+.title{
+	text-align: center;
+	color:  #fff;
+	font-style: Open sans;
+	line-height: 90px;
+	font-size: 25px;
+}
+.header{
+	height:90px;
+	background-color: #A63F3F;
+	margin-bottom:15px;
+	margin-top: -12px;
+	padding: 20px;
+	border-bottom:2px solid #fff;
+}
+.header .logo{
+	display: block;
+	height: 100px;
+	margin: 0 auto;
+}
+.container_greenhouse{
+	height:600px;
+	width:600px;
+	position: relative;
+	margin:0 auto;
+
+	background-color: #F2C063;
+	border:2px solid #000;
+}
+.case{
+	display: inline-block;
+	height:170px;
+	width:170px;
+	margin:12px 12px;
+	cursor:pointer;
+	background-color: rgb(35,30,50);
+	border: 1.5px solid #000;
+}
+.case_img{
+	padding:0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+/** ASIDE LEFT **/
+.aside_left{
+	float: left;
+	width: 300px;
+	height: 605px;
+	background: #F2C063;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+.aside_left h2{
+	padding-top: 5px;
+	text-align: center;
+	color: #fff;
+}
+.aside_left button{
+	display: block;
+	margin: 30px auto;
+	width: 250px;
+	height: 50px;
+	background-color: #F2C063;
+	color: #fff;
+	border: 2px solid #fff;
+	font-size: 17px;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.aside_left button:hover{
+	color: #F2C063;
+	background-color: #fff;
+}
+/** POPUP **/
+
+.popup{
+	position: absolute;
+	height: 600px;
+	width: 600px;
+	background-color: #A63F3F;
+	display: none;
+	top:0;
+	left: 0;
+}
+.popup img{
+	margin: 0 auto;
+	width: 200px; 
+	height: 200px;
+	border: 5px solid #fff;
+	display: inline-block;
+	float: left;
+}
+.popup h1, .popup h3{
+	text-align: center;
+	color: #fff;
+}
+.popup span{
+	font-size: 18px;
+}
+.popup h4{
+	text-align: center;
+	color: #fff;
+	line-height: 10px;
+}
+.popup .force_button:first{
+	margin-left:20px;
+}
+.popup .force_button{
+	width: 230px;
+	height: 50px;
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 45px;
+	background-color: #fff;
+	color: #A63F3F;
+	font-size: 15px;
+ 	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.popup .force_button:hover{
+	border: 1px solid #fff;
+	background-color: #A63F3F;
+	color: #fff;
+}
+.popup .separator{
+	width: 100%;
+	height: 2px;
+	margin-top: 40px;
+	background-color: #000;
+}
+.popup .validate{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 55px;
+	width: 100%;
+
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #A63F3F;
+	font-size:20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.popup .validate:hover{
+	background-color: #A63F3F;
+	color: #fff;
+}
+
+/** POPUP_none **/
+
+.popup_none{
+	position: absolute;
+	height: 600px;
+	width: 600px;
+	margin-top: -588px;
+	background-color: #A63F3F;
+	display: none;
+}
+.popup_none img{
+	margin: 0 auto;
+	width: 200px; 
+	height: 200px;
+	border: 5px solid #fff;
+	display: inline-block;
+	float: left;
+}
+.popup_none h1, .popup_none h3, .popup_none h2{
+	text-align: center;
+	color: #fff;
+}
+.popup_none span{
+	font-size: 18px;
+}
+.popup_none h4{
+	text-align: center;
+	color: #fff;
+	line-height: 10px;
+}
+.popup_none #info_legume span{
+	font-style: bold;
+}
+.popup_none .force_button:first{
+	margin-left:20px;
+}
+.popup_none .force_button{
+	width: 230px;
+	height: 50px;
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 45px;
+	background-color: #fff;
+	color: #A63F3F;
+	font-size: 15px;
+ 	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.popup_none .force_button:hover{
+	border: 1px solid #fff;
+	background-color: #A63F3F;
+	color: #fff;
+}
+.popup_none .separator{
+	width: 100%;
+	height: 2px;
+	margin-top: 40px;
+	background-color: #000;
+}
+.popup_none .validate{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 55px;
+	width: 100%;
+
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #A63F3F;
+	font-size:20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.popup_none .validate:hover{
+	background-color: #A63F3F;
+	color: #fff;
+}
+.popup_none select{
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+	height: 50px;
+	font-size: 20px;
+	text-align-last:center;
+	color: #1E2D40;
+}	
+.popup_none .close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #fff;
+	height: 40px;
+	width: 40px;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+	color: #A63F3F;
+	border-left: 5px solid #000;
+	border-bottom: 5px solid #000;
+	cursor: pointer;
+}
+/** PAGE CONNEXION **/
+.div_connect .logo{
+	height: 300px;
+}
+.div_connect img{
+	display: block;
+	margin: 0 auto;
+}
+.div_connect h2{
+	text-align: center;
+	font-weight: 200;
+	color: #fff;
+}
+.div_connect .form_connect input{
+	margin: 25px auto;
+	display: block;
+	height: 50px;
+	width: 300px;
+	border: 2px solid #4fa659;
+	background-color: #fff;
+	font-size: 17px;
+	padding: 5px;
+}
+.div_connect .form_connect input[type=submit]{
+	margin: 25px auto;
+	display: block;
+	height: 50px;
+	width: 300px;
+	border: 2px solid #4fa659;
+	background-color: #fff;
+	color: #4fa659;
+	font-size: 17px;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.div_connect .form_connect input[type=submit]:hover{
+	background-color: #4fa659;
+	color: #fff;
+}
+.error{
+	height: 40px;
+	width: 300px;
+	margin: 20px auto;
+	background-color: #f37777;
+	color: #eb1212;
+	border: 2px solid #eb1212;
+	border-radius: 20px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/** PAGE NEW LEGUME **/
+
+
+.div_new_legume .logo{
+	height: 200px;
+}
+.div_new_legume img{
+	display: block;
+	margin: 0 auto;
+}
+.div_new_legume h2{
+	text-align: center;
+	font-weight: 200;
+	color: #fff;
+}
+.div_new_legume .form_connect input{
+	margin: 25px auto;
+	display: block;
+	height: 40px;
+	width: 350px;
+	border: 2px solid #4fa659;
+	background-color: #fff;
+	font-size: 17px;
+	padding: 5px;
+}
+.div_new_legume .form_connect p{
+	margin-bottom: -15px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+.div_new_legume .form_connect input[type=submit]{
+	margin: 25px auto;
+	display: block;
+	height: 40px;
+	width: 350px;
+	border: 2px solid #4fa659;
+	background-color: #fff;
+	color: #4fa659;
+	font-size: 17px;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.div_new_legume .form_connect input[type=submit]:hover{
+	background-color: #4fa659;
+	color: #fff;
+}
+.error{
+	height: 40px;
+	width: 400px;
+	margin: 20px auto;
+	background-color: #f37777;
+	color: #eb1212;
+	border: 2px solid #eb1212;
+	border-radius: 20px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/** 3 BUTTON MOBILE **/
+
+.button_mobile button{
+	margin: 55px 6.5px;
+	width: 32%;
+	height: 200px;
+	background: none;
+	border: 5px solid #fff;
+	color: #fff;
+	font-size: 35px;
+}
+
+@media screen and (max-width: 1000px) {
+	.popup .info_serre, .popup_none img{
+		display: none;
+	}
+	.popup .force_button{
+		width: 400px;
+		height:80px;
+		font-size:25px;
+		margin: 60px 40px;
+	}
+	.popup img{
+		height:300px;
+		width:300px;
+	}
+	.aside_left{
+	 	display: none;
+	}
+	.container, .container_greenhouse,.popup, .popup_none{
+	  	width: 100%;
+	  	border: none;
+	}
+	.popup_none select{
+		height: 80px;
+		width: 500px;
+		background:#fff;
+		font-size: 40px;
+	}
+	.container_greenhouse .case{
+	  	width: 28%;
+		margin: 2px;
+	}
+	.popup .validate, .popup_none .validate{
+		height:100px;
+		font-size:30px;
+	}
+	.popup span{
+		font-size:1.2em;
+	}
+	.popup_none .close{
+		height:100px;
+		width:100px;
+		font-size:90px;
+		line-height:100px;
+	}
+	.popup_none .separator{
+		margin: 70px 0;
+		height: 4px;
+	}
+	.div_new_legume .logo, .div_connect .logo{
+		height: 400px;
+	}
+	.form_connect p{
+		font-size:35px;
+	}
+	.form_connect input[type=text], .form_connect input[type=file], .form_connect input[type=password],  .form_connect input[type=number], .form_connect input[type=submit],.div_new_legume .form_connect input[type=submit], .div_connect .form_connect input[type=submit]{
+		width: 80%;
+		height: 100px;
+		font-size: 35px;
+		padding: 20px;
+	}
+	.error{
+		width: 75%;
+		height: 50px;
+		line-height: 50px;
+		font-size: 35px;
+		padding: 20px;
+	}
+	h1{font-size : 3em;}
+	h2{font-size : 1.9em;}
+	h3{font-size : 1.9em;}
+	h4{font-size : 1.83em;}
+	h5{font-size : 1.75em;}
+}
